@@ -1,12 +1,10 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+<template lang="pug">
+  v-container.home Hello Vue!!!
 </template>
 
-<script>
-export default {
-  name: 'Home'
-}
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({})
 </script>
+
+<style lang="scss"></style>

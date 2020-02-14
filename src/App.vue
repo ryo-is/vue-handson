@@ -40,14 +40,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
-
-.theme-switch {
-  &.v-input {
-    .v-label {
-      color: white;
-      font-size: 14px;
-      line-height: 22px;
-    }
-  }
-}
 </style>
