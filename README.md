@@ -19,4 +19,7 @@ ors, Linter, Unit, E2E
 ? Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config files
 ? Save this as a preset for future projects? No
 ? Pick the package manager to use when installing dependencies: Yarn
+
+$ vue add pug
+$ yarn add vuetify @mdi/font material-design-icons-iconfont
 ```
