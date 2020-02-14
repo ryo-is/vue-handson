@@ -21,5 +21,5 @@ ors, Linter, Unit, E2E
 ? Pick the package manager to use when installing dependencies: Yarn
 
 $ vue add pug
-$ yarn add vuetify @mdi/font material-design-icons-iconfont
+$ yarn add vuetify vuetify-loader @mdi/font material-design-icons-iconfont
 ```
