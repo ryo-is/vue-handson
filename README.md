@@ -1,34 +1,22 @@
-# vue-handson
+# 手順メモ
 
-## Project setup
 ```
-yarn install
-```
+$ npm i -g @vue/cli
+$ vue create vue-handson
 
-### Compiles and hot-reloads for development
+Vue CLI v4.2.2
+? Please pick a preset: Manually select features
+? Check the features needed for your project: (Press <space> to select, <a> to toggle all, <i> to invert selection)Babel, TS, PWA, Router, Vuex, CSS Pre-process
+ors, Linter, Unit, E2E
+? Use class-style component syntax? No
+? Use Babel alongside TypeScript (required for modern mode, auto-detected polyfills, transpiling JSX)? Yes
+? Use history mode for router? (Requires proper server setup for index fallback in production) Yes
+? Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default): Sass/SCSS (with node-sass)
+? Pick a linter / formatter config: Prettier
+? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i> to invert selection)Lint on save, Lint and fix on commit
+? Pick a unit testing solution: Jest
+? Pick a E2E testing solution: Cypress
+? Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config files
+? Save this as a preset for future projects? No
+? Pick the package manager to use when installing dependencies: Yarn
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Run your end-to-end tests
-```
-yarn test:e2e
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
