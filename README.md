@@ -40,12 +40,6 @@ $ vue add pug
 $ yarn add vuetify vuetify-loader
 ```
 
-## (必要なら)アイコン関係インストール
-
-```
-$ yarn add @mdi/font material-design-icons-iconfont
-```
-
 ## Vuetify有効化
 
 `plugin` ディレクトリ(なければ作る)に `vuetify.ts` を生成する
@@ -54,16 +48,12 @@ $ yarn add @mdi/font material-design-icons-iconfont
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-import '@mdi/font/css/materialdesignicons.css' // 必要なら
-import 'material-design-icons-iconfont/dist/material-design-icons.css' // 必要なら
 import ja from 'vuetify/src/locale/ja'
 
 Vue.use(Vuetify)
 
 export default new Vuetify({
-  icons: {
-    iconfont: 'md' || 'mdi' // 必要なら
-  },
+  icons: {},
   theme: {
     dark: true
   },
@@ -163,4 +153,49 @@ $ yarn lint
     "source.fixAll.eslint": true
   }
 }
+```
+
+## mdi icon の使い方
+
+### アイコン関係のパッケージをインストール
+
+```
+$ yarn add @mdi/font
+```
+
+### importして有効化する
+
+```
+import Vue from 'vue'
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+import '@mdi/font/css/materialdesignicons.css' // 追加
+import 'material-design-icons-iconfont/dist/material-design-icons.css' // 追加
+import ja from 'vuetify/src/locale/ja'
+
+Vue.use(Vuetify)
+
+export default new Vuetify({
+  icons: {
+    iconfont: 'mdi' // 追加
+  },
+  theme: {
+    dark: true
+  },
+  lang: {
+    locales: { ja },
+    current: 'ja'
+  }
+})
+```
+
+### 使うときは…
+
+基本的には `v-icon` テンプレートを利用して、その文字列として `mdi-xxxx` という形で指定する。
+
+Material Design Icons (https://materialdesignicons.com/) で使いたいアイコンを探す
+
+```
+v-icon mdi-mouse
+v-icon mdi-plus
 ```

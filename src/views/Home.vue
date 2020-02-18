@@ -4,7 +4,7 @@
       v-col(cols=12)
         .display-1 Hello Vue
       v-col(cols=12)
-        v-icon add
+        v-icon mdi-plus
         v-icon mdi-mouse
 </template>
 
